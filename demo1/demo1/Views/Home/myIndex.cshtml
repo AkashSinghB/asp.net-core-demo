@@ -1,0 +1,48 @@
+﻿@model myIndexModel
+@{
+    ViewData["Title"] = "myIndex";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h2>Login</h2>
+        <br />
+
+        <div class="border p-4 ">
+
+            <div class="form-group row">
+                <div class="col-3 p-2">
+                    <label  class="font-weight-bold">Email Id</label>
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="email" name="Email Id" value="" asp-for="EmailId" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-3 p-2">
+                    <label class="font-weight-bold" >Password</label>
+                </div>
+                <div class="col-6">
+                    <input class="form-control" name="Password" value="" asp-for="Pwd" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-3 offset-3">
+                    <button class="btn btn-success form-control">Log in</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-secondary form-control">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
